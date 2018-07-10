@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>UT_ANNOTATION_CACHE_MANAGER - My Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "UT_ANNOTATION_CACHE_MANAGER";
+    var mkdocs_page_input_path = "ut_annotation_cache_manager.md";
+    var mkdocs_page_url = "/ut_annotation_cache_manager/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">UTPLSQLDOCS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut/">UT</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">UT_ANNOTATION_CACHE_MANAGER</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#ut_annotation_cache_manager">UT_ANNOTATION_CACHE_MANAGER</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#update_cache-procedure">UPDATE_CACHE Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#get_annotations_for_objects-function">GET_ANNOTATIONS_FOR_OBJECTS Function</a></li>
+        
+            <li><a class="toctree-l3" href="#cleanup_cache-procedure">CLEANUP_CACHE Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#purge_cache-procedure">PURGE_CACHE Procedure</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_manager/">Ut annotation manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_parser/">Ut annotation parser</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_ansiconsole_helper/">Ut ansiconsole helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_compound_data_helper/">Ut compound data helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage/">Ut coverage</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_block/">Ut coverage block</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper/">Ut coverage helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_block/">Ut coverage helper block</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_profiler/">Ut coverage helper profiler</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_profiler/">Ut coverage profiler</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_report_html_helper/">Ut coverage report html helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_curr_usr_compound_helper/">Ut curr usr compound helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_event_manager/">Ut event manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_expectation_processor/">Ut expectation processor</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_file_mapper/">Ut file mapper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_metadata/">Ut metadata</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_runner/">Ut runner</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_builder/">Ut suite builder</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_manager/">Ut suite manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_teamcity_reporter_helper/">Ut teamcity reporter helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_utils/">Ut utils</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>UT_ANNOTATION_CACHE_MANAGER</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ut_annotation_cache_manager">UT_ANNOTATION_CACHE_MANAGER</h1>
+<ul>
+<li><a href="#update_cache">UPDATE_CACHE Procedure</a></li>
+<li><a href="#get_annotations_for_objects">GET_ANNOTATIONS_FOR_OBJECTS Function</a></li>
+<li><a href="#cleanup_cache">CLEANUP_CACHE Procedure</a></li>
+<li><a href="#purge_cache">PURGE_CACHE Procedure</a></li>
+</ul>
+<h2 id="update_cache-procedure">UPDATE_CACHE Procedure<a name="update_cache"></a></h2>
+<p>
+<p>utPLSQL - Version 3<br />  Copyright 2016 - 2017 utPLSQL Project</p><p>  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;):<br />  you may not use this file except in compliance with the License.<br />  You may obtain a copy of the License at</p><pre><code>  http://www.apache.org/licenses/LICENSE-2.0</code></pre><p>  Unless required by applicable law or agreed to in writing, software<br />  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,<br />  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br />  See the License for the specific language governing permissions and<br />  limitations under the License.</p>
+</p>
+
+<h3 id="syntax">Syntax</h3>
+<pre><code class="plsql">procedure update_cache(a_object ut_annotated_object)
+</code></pre>
+
+<h2 id="get_annotations_for_objects-function">GET_ANNOTATIONS_FOR_OBJECTS Function<a name="get_annotations_for_objects"></a></h2>
+<p>
+<p>Returns a ref_cursor containing <code>ut_annotated_object</code> as result<br />Range of data returned is limited by the input collection o cache object info</p>
+</p>
+
+<h3 id="syntax_1">Syntax</h3>
+<pre><code class="plsql">function get_annotations_for_objects(a_cached_objects ut_annotation_objs_cache_info) return sys_refcursor
+</code></pre>
+
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a_cached_objects</code></td>
+<td>a <code>ut_annotation_objs_cache_info</code> list with information about objects to get from cache</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cleanup_cache-procedure">CLEANUP_CACHE Procedure<a name="cleanup_cache"></a></h2>
+<p>
+<p>Removes cached information about annotations for objects on the list and updates parse_time in cache info table.</p>
+</p>
+
+<h3 id="syntax_2">Syntax</h3>
+<pre><code class="plsql">procedure cleanup_cache(a_objects ut_annotation_objs_cache_info)
+</code></pre>
+
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a_objects</code></td>
+<td>a <code>ut_annotation_objs_cache_info</code> list with information about objects to remove from cache</td>
+</tr>
+</tbody>
+</table>
+<h2 id="purge_cache-procedure">PURGE_CACHE Procedure<a name="purge_cache"></a></h2>
+<p>
+<p>Removes cached information about annotations for objects of specified type and specified owner</p>
+</p>
+
+<h3 id="syntax_3">Syntax</h3>
+<pre><code class="plsql">procedure purge_cache(a_object_owner varchar2, a_object_type varchar2)
+</code></pre>
+
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a_object_owner</code></td>
+<td>owner of objects to purge annotations for</td>
+</tr>
+<tr>
+<td><code>a_object_type</code></td>
+<td>type of objects to purge annotations for</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ut_annotation_manager/" class="btn btn-neutral float-right" title="Ut annotation manager">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ut/" class="btn btn-neutral" title="UT"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ut/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../ut_annotation_manager/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

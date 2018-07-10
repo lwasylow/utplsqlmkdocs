@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>UT_METADATA - My Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "UT_METADATA";
+    var mkdocs_page_input_path = "ut_metadata.md";
+    var mkdocs_page_url = "/ut_metadata/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">UTPLSQLDOCS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut/">UT</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_cache_manager/">UT_ANNOTATION_CACHE_MANAGER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_manager/">UT_ANNOTATION_MANAGER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_parser/">UT_ANNOTATION_PARSER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_ansiconsole_helper/">UT_ANSICONSOLE_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_compound_data_helper/">UT_COMPOUND_DATA_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage/">UT_COVERAGE</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_block/">UT_COVERAGE_BLOCK</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper/">UT_COVERAGE_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_block/">UT_COVERAGE_HELPER_BLOCK</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_profiler/">UT_COVERAGE_HELPER_PROFILER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_profiler/">UT_COVERAGE_PROFILER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_report_html_helper/">UT_COVERAGE_REPORT_HTML_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_curr_usr_compound_helper/">UT_CURR_USR_COMPOUND_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_event_manager/">UT_EVENT_MANAGER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_expectation_processor/">UT_EXPECTATION_PROCESSOR</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_file_mapper/">UT_FILE_MAPPER</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">UT_METADATA</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#ut_metadata">UT_METADATA</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#types">Types</a></li>
+        
+            <li><a class="toctree-l3" href="#variables">Variables</a></li>
+        
+            <li><a class="toctree-l3" href="#exceptions">Exceptions</a></li>
+        
+            <li><a class="toctree-l3" href="#form_name-function">FORM_NAME Function</a></li>
+        
+            <li><a class="toctree-l3" href="#package_valid-function">PACKAGE_VALID Function</a></li>
+        
+            <li><a class="toctree-l3" href="#procedure_exists-function">PROCEDURE_EXISTS Function</a></li>
+        
+            <li><a class="toctree-l3" href="#do_resolve-procedure">DO_RESOLVE Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#do_resolve-1-procedure">DO_RESOLVE-1 Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#get_source_definition_line-function">GET_SOURCE_DEFINITION_LINE Function</a></li>
+        
+            <li><a class="toctree-l3" href="#reset_source_definition_cache-procedure">RESET_SOURCE_DEFINITION_CACHE Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#get_dba_view-function">GET_DBA_VIEW Function</a></li>
+        
+            <li><a class="toctree-l3" href="#package_exists_in_cur_schema-function">PACKAGE_EXISTS_IN_CUR_SCHEMA Function</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_runner/">Ut runner</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_builder/">Ut suite builder</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_manager/">Ut suite manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_teamcity_reporter_helper/">Ut teamcity reporter helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_utils/">Ut utils</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>UT_METADATA</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ut_metadata">UT_METADATA</h1>
+<ul>
+<li>
+<p><a href="#types">Data Types</a></p>
+</li>
+<li>
+<p><a href="#variables">Variables</a></p>
+</li>
+<li>
+<p><a href="#exceptions">Exceptions</a></p>
+</li>
+<li>
+<p><a href="#form_name">FORM_NAME Function</a></p>
+</li>
+<li><a href="#package_valid">PACKAGE_VALID Function</a></li>
+<li><a href="#procedure_exists">PROCEDURE_EXISTS Function</a></li>
+<li><a href="#do_resolve">DO_RESOLVE Procedure</a></li>
+<li><a href="#do_resolve-1">DO_RESOLVE-1 Procedure</a></li>
+<li><a href="#get_source_definition_line">GET_SOURCE_DEFINITION_LINE Function</a></li>
+<li><a href="#reset_source_definition_cache">RESET_SOURCE_DEFINITION_CACHE Procedure</a></li>
+<li><a href="#get_dba_view">GET_DBA_VIEW Function</a></li>
+<li><a href="#package_exists_in_cur_schema">PACKAGE_EXISTS_IN_CUR_SCHEMA Function</a></li>
+</ul>
+<h2 id="types">Types<a name="types"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>t_cache</td>
+<td><pre>type t_cache is table of all_source.text%type;</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="variables">Variables<a name="variables"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>end</td>
+<td><pre>    end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>    return l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><pre>    g_cached_object := null;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_result</td>
+<td><pre>    l_result              varchar2(128) := lower(a_dba_view_name);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pragma</td>
+<td><pre>    pragma exception_init(l_invalid_object_name,-44002);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>begin</td>
+<td><pre>  begin<br />    l_result := dbms_assert.sql_object_name(l_result);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>    return l_result;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>c_current_schema</td>
+<td><pre>    c_current_schema constant all_tables.owner%type := sys_context('USERENV','CURRENT_SCHEMA');</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>    return l_cnt &gt; 0;</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exceptions">Exceptions<a name="exceptions"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>end</td>
+<td><pre>    end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>    return l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><pre>    g_cached_object := null;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_result</td>
+<td><pre>    l_result              varchar2(128) := lower(a_dba_view_name);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pragma</td>
+<td><pre>    pragma exception_init(l_invalid_object_name,-44002);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>begin</td>
+<td><pre>  begin<br />    l_result := dbms_assert.sql_object_name(l_result);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>    return l_result;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>c_current_schema</td>
+<td><pre>    c_current_schema constant all_tables.owner%type := sys_context('USERENV','CURRENT_SCHEMA');</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>    return l_cnt &gt; 0;</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="form_name-function">FORM_NAME Function<a name="form_name"></a></h2>
+<p>
+<p>Forms correct object/subprogram name to call as owner.object[.subprogram]</p>
+</p>
+
+<h3 id="syntax">Syntax</h3>
+<pre><code class="plsql">function form_name(a_owner_name varchar2, a_object varchar2, a_subprogram varchar2 default null) return varchar2
+</code></pre>
+
+<h2 id="package_valid-function">PACKAGE_VALID Function<a name="package_valid"></a></h2>
+<p>
+<p>Check if package exists and is in a VALID state</p>
+</p>
+
+<h3 id="syntax_1">Syntax</h3>
+<pre><code class="plsql">function package_valid(a_owner_name varchar2, a_package_name in varchar2) return boolean
+</code></pre>
+
+<h2 id="procedure_exists-function">PROCEDURE_EXISTS Function<a name="procedure_exists"></a></h2>
+<p>
+<p>Check if package exists and is VALID and contains the given procedure.</p>
+</p>
+
+<h3 id="syntax_2">Syntax</h3>
+<pre><code class="plsql">function procedure_exists(a_owner_name varchar2, a_package_name in varchar2, a_procedure_name in varchar2)
+  return boolean
+</code></pre>
+
+<h2 id="do_resolve-procedure">DO_RESOLVE Procedure<a name="do_resolve"></a></h2>
+<p>
+<p>Resolves [owner.]object using dbms_utility.name_resolve and returns resolved parts</p>
+</p>
+
+<h3 id="syntax_3">Syntax</h3>
+<pre><code class="plsql">procedure do_resolve(a_owner in out nocopy varchar2, a_object in out nocopy varchar2)
+</code></pre>
+
+<h2 id="do_resolve-1-procedure">DO_RESOLVE-1 Procedure<a name="do_resolve-1"></a></h2>
+<p>
+<p>Resolves [owner.]object[.procedure] using dbms_utility.name_resolve and returns resolved parts</p>
+</p>
+
+<h3 id="syntax_4">Syntax</h3>
+<pre><code class="plsql">procedure do_resolve(a_owner in out nocopy varchar2, a_object in out nocopy varchar2, a_procedure_name in out nocopy varchar2)
+</code></pre>
+
+<h2 id="get_source_definition_line-function">GET_SOURCE_DEFINITION_LINE Function<a name="get_source_definition_line"></a></h2>
+<p>
+<p>Return the text of the source line for a given object (body). It excludes package spec and type spec</p>
+</p>
+
+<h3 id="syntax_5">Syntax</h3>
+<pre><code class="plsql">function get_source_definition_line(a_owner varchar2, a_object_name varchar2, a_line_no integer) return varchar2
+</code></pre>
+
+<h2 id="reset_source_definition_cache-procedure">RESET_SOURCE_DEFINITION_CACHE Procedure<a name="reset_source_definition_cache"></a></h2>
+<p>
+<p>Invalidates package-level cache for source.<br />Caching is used to improve performance of function get_source_definition_line</p>
+</p>
+
+<h3 id="syntax_6">Syntax</h3>
+<pre><code class="plsql">procedure reset_source_definition_cache
+</code></pre>
+
+<h2 id="get_dba_view-function">GET_DBA_VIEW Function<a name="get_dba_view"></a></h2>
+<p>
+<p>Returns dba_... view name if it is accessible, otherwise it returns all_xxx view</p>
+</p>
+
+<h3 id="syntax_7">Syntax</h3>
+<pre><code class="plsql">function get_dba_view(a_dba_view_name varchar2) return varchar2
+</code></pre>
+
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a_dba_view_name</code></td>
+<td>the name of dba view requested</td>
+</tr>
+</tbody>
+</table>
+<h2 id="package_exists_in_cur_schema-function">PACKAGE_EXISTS_IN_CUR_SCHEMA Function<a name="package_exists_in_cur_schema"></a></h2>
+<p>
+<p>Returns true if given object is a package and it exists in current schema</p>
+</p>
+
+<h3 id="syntax_8">Syntax</h3>
+<pre><code class="plsql">function package_exists_in_cur_schema(a_object_name varchar2) return boolean
+</code></pre>
+
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a_object_name</code></td>
+<td>the name of the object to be checked</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ut_runner/" class="btn btn-neutral float-right" title="Ut runner">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ut_file_mapper/" class="btn btn-neutral" title="UT_FILE_MAPPER"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ut_file_mapper/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../ut_runner/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

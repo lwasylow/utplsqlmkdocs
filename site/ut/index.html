@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>UT - My Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "UT";
+    var mkdocs_page_input_path = "ut.md";
+    var mkdocs_page_url = "/ut/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">UTPLSQLDOCS</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">UT</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#ut">UT</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#variables">Variables</a></li>
+        
+            <li><a class="toctree-l3" href="#exceptions">Exceptions</a></li>
+        
+            <li><a class="toctree-l3" href="#version-function">VERSION Function</a></li>
+        
+            <li><a class="toctree-l3" href="#set_nls-procedure">SET_NLS Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#reset_nls-procedure">RESET_NLS Procedure</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_cache_manager/">Ut annotation cache manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_manager/">Ut annotation manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_parser/">Ut annotation parser</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_ansiconsole_helper/">Ut ansiconsole helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_compound_data_helper/">Ut compound data helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage/">Ut coverage</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_block/">Ut coverage block</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper/">Ut coverage helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_block/">Ut coverage helper block</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_profiler/">Ut coverage helper profiler</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_profiler/">Ut coverage profiler</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_report_html_helper/">Ut coverage report html helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_curr_usr_compound_helper/">Ut curr usr compound helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_event_manager/">Ut event manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_expectation_processor/">Ut expectation processor</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_file_mapper/">Ut file mapper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_metadata/">Ut metadata</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_runner/">Ut runner</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_builder/">Ut suite builder</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_manager/">Ut suite manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_teamcity_reporter_helper/">Ut teamcity reporter helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_utils/">Ut utils</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>UT</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ut">UT</h1>
+<ul>
+<li>
+<p><a href="#variables">Variables</a></p>
+</li>
+<li>
+<p><a href="#exceptions">Exceptions</a></p>
+</li>
+<li>
+<p><a href="#version">VERSION Function</a></p>
+</li>
+<li><a href="#set_nls">SET_NLS Procedure</a></li>
+<li><a href="#reset_nls">RESET_NLS Procedure</a></li>
+</ul>
+<h2 id="variables">Variables<a name="variables"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>g_nls_date_format</td>
+<td><pre>g_nls_date_format varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pragma</td>
+<td><pre>  pragma exception_init (e_package_invalidated, -04068);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>raise</td>
+<td><pre>    raise e_package_invalidated;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>c_fail_on_errors</td>
+<td><pre>  c_fail_on_errors constant boolean := false;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>c_fail_on_errors</td>
+<td><pre>  c_fail_on_errors constant boolean := false;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_paths</td>
+<td><pre>  l_paths     ut_varchar2_list := ut_varchar2_list(sys_context('userenv', 'current_schema'));</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_paths</td>
+<td><pre>  l_paths     ut_varchar2_list := ut_varchar2_list(sys_context('userenv', 'current_schema'));</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_paths</td>
+<td><pre>  l_paths     ut_varchar2_list := ut_varchar2_list(coalesce(a_path, sys_context('userenv', 'current_schema')));</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_paths</td>
+<td><pre>  l_paths     ut_varchar2_list := ut_varchar2_list(coalesce(a_path, sys_context('userenv', 'current_schema')));</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>execute</td>
+<td><pre>  execute immediate 'alter session set nls_date_format = '''</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><pre>  g_nls_date_format := null;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>end ut;</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exceptions">Exceptions<a name="exceptions"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>g_nls_date_format</td>
+<td><pre>g_nls_date_format varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pragma</td>
+<td><pre>  pragma exception_init (e_package_invalidated, -04068);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>raise</td>
+<td><pre>    raise e_package_invalidated;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>c_fail_on_errors</td>
+<td><pre>  c_fail_on_errors constant boolean := false;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>c_fail_on_errors</td>
+<td><pre>  c_fail_on_errors constant boolean := false;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_paths</td>
+<td><pre>  l_paths     ut_varchar2_list := ut_varchar2_list(sys_context('userenv', 'current_schema'));</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_paths</td>
+<td><pre>  l_paths     ut_varchar2_list := ut_varchar2_list(sys_context('userenv', 'current_schema'));</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_paths</td>
+<td><pre>  l_paths     ut_varchar2_list := ut_varchar2_list(coalesce(a_path, sys_context('userenv', 'current_schema')));</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_paths</td>
+<td><pre>  l_paths     ut_varchar2_list := ut_varchar2_list(coalesce(a_path, sys_context('userenv', 'current_schema')));</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_lines</td>
+<td><pre>  l_lines     sys_refcursor;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_line</td>
+<td><pre>  l_line      varchar2(4000);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>loop</td>
+<td><pre>    loop<br />      fetch l_lines into l_line;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>exit</td>
+<td><pre>      exit when l_lines%notfound;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>pipe</td>
+<td><pre>      pipe row(l_line);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>    end loop;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>close</td>
+<td><pre>    close l_lines;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>execute</td>
+<td><pre>  execute immediate 'alter session set nls_date_format = '''</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><pre>  g_nls_date_format := null;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>end ut;</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="version-function">VERSION Function<a name="version"></a></h2>
+<p>
+<p>utPLSQL - Version 3<br />  Copyright 2016 - 2017 utPLSQL Project</p><p>  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;):<br />  you may not use this file except in compliance with the License.<br />  You may obtain a copy of the License at</p><pre><code>  http://www.apache.org/licenses/LICENSE-2.0</code></pre><p>  Unless required by applicable law or agreed to in writing, software<br />  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,<br />  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br />  See the License for the specific language governing permissions and<br />  limitations under the License.</p>
+</p>
+
+<h3 id="syntax">Syntax</h3>
+<pre><code class="plsql">function version return varchar2
+</code></pre>
+
+<h2 id="set_nls-procedure">SET_NLS Procedure<a name="set_nls"></a></h2>
+<p>
+<p>Helper procedure to set NLS session parameter for date processing in refcursor.<br />It needs to be called before refcursor is open in order to have DATE data type data in refcursor<br /> properly transformed into XML format as a date-time element.<br />If the function is not called before opening a cursor to be compared, the DATE data is compared using default NLS setting for date.</p>
+</p>
+
+<h3 id="syntax_1">Syntax</h3>
+<pre><code class="plsql">procedure set_nls
+</code></pre>
+
+<h2 id="reset_nls-procedure">RESET_NLS Procedure<a name="reset_nls"></a></h2>
+<p>
+<p>Helper procedure to reset NLS session parameter to it&#39;s original state.<br />It needs to be called after refcursor is open in order restore the original session state and keep the NLS date setting at default.</p>
+</p>
+
+<h3 id="syntax_2">Syntax</h3>
+<pre><code class="plsql">procedure reset_nls
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ut_annotation_cache_manager/" class="btn btn-neutral float-right" title="Ut annotation cache manager">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="UTPLSQLDOCS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../ut_annotation_cache_manager/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>UT_UTILS - My Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "UT_UTILS";
+    var mkdocs_page_input_path = "ut_utils.md";
+    var mkdocs_page_url = "/ut_utils/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> My Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">UTPLSQLDOCS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut/">UT</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_cache_manager/">UT_ANNOTATION_CACHE_MANAGER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_manager/">UT_ANNOTATION_MANAGER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_parser/">UT_ANNOTATION_PARSER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_ansiconsole_helper/">UT_ANSICONSOLE_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_compound_data_helper/">UT_COMPOUND_DATA_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage/">UT_COVERAGE</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_block/">UT_COVERAGE_BLOCK</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper/">UT_COVERAGE_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_block/">UT_COVERAGE_HELPER_BLOCK</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_profiler/">UT_COVERAGE_HELPER_PROFILER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_profiler/">UT_COVERAGE_PROFILER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_report_html_helper/">UT_COVERAGE_REPORT_HTML_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_curr_usr_compound_helper/">UT_CURR_USR_COMPOUND_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_event_manager/">UT_EVENT_MANAGER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_expectation_processor/">UT_EXPECTATION_PROCESSOR</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_file_mapper/">UT_FILE_MAPPER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_metadata/">UT_METADATA</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_runner/">UT_RUNNER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_builder/">UT_SUITE_BUILDER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_manager/">UT_SUITE_MANAGER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_teamcity_reporter_helper/">UT_TEAMCITY_REPORTER_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">UT_UTILS</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#ut_utils">UT_UTILS</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#types">Types</a></li>
+        
+            <li><a class="toctree-l3" href="#constants">Constants</a></li>
+        
+            <li><a class="toctree-l3" href="#surround_with-function">SURROUND_WITH Function</a></li>
+        
+            <li><a class="toctree-l3" href="#validate_rollback_type-procedure">VALIDATE_ROLLBACK_TYPE Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#test_result_to_char-function">TEST_RESULT_TO_CHAR Function</a></li>
+        
+            <li><a class="toctree-l3" href="#gen_savepoint_name-function">GEN_SAVEPOINT_NAME Function</a></li>
+        
+            <li><a class="toctree-l3" href="#string_to_table-function">STRING_TO_TABLE Function</a></li>
+        
+            <li><a class="toctree-l3" href="#clob_to_table-function">CLOB_TO_TABLE Function</a></li>
+        
+            <li><a class="toctree-l3" href="#time_diff-function">TIME_DIFF Function</a></li>
+        
+            <li><a class="toctree-l3" href="#indent_lines-function">INDENT_LINES Function</a></li>
+        
+            <li><a class="toctree-l3" href="#get_utplsql_objects_list-function">GET_UTPLSQL_OBJECTS_LIST Function</a></li>
+        
+            <li><a class="toctree-l3" href="#append_to_list-procedure">APPEND_TO_LIST Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#set_action-procedure">SET_ACTION Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#set_client_info-procedure">SET_CLIENT_INFO Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#to_version-function">TO_VERSION Function</a></li>
+        
+            <li><a class="toctree-l3" href="#save_dbms_output_to_cache-procedure">SAVE_DBMS_OUTPUT_TO_CACHE Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#read_cache_to_dbms_output-procedure">READ_CACHE_TO_DBMS_OUTPUT Procedure</a></li>
+        
+            <li><a class="toctree-l3" href="#ut_owner-function">UT_OWNER Function</a></li>
+        
+            <li><a class="toctree-l3" href="#scale_cardinality-function">SCALE_CARDINALITY Function</a></li>
+        
+            <li><a class="toctree-l3" href="#to_xml_number_format-function">TO_XML_NUMBER_FORMAT Function</a></li>
+        
+            <li><a class="toctree-l3" href="#get_xml_header-function">GET_XML_HEADER Function</a></li>
+        
+            <li><a class="toctree-l3" href="#trim_list_elements-function">TRIM_LIST_ELEMENTS Function</a></li>
+        
+            <li><a class="toctree-l3" href="#filter_list-function">FILTER_LIST Function</a></li>
+        
+            <li><a class="toctree-l3" href="#replace_multiline_comments-function">REPLACE_MULTILINE_COMMENTS Function</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">My Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>UT_UTILS</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ut_utils">UT_UTILS</h1>
+<ul>
+<li>
+<p><a href="#types">Data Types</a></p>
+</li>
+<li>
+<p><a href="#constants">Constants</a></p>
+</li>
+<li>
+<p><a href="#surround_with">SURROUND_WITH Function</a></p>
+</li>
+<li><a href="#validate_rollback_type">VALIDATE_ROLLBACK_TYPE Procedure</a></li>
+<li><a href="#test_result_to_char">TEST_RESULT_TO_CHAR Function</a></li>
+<li><a href="#gen_savepoint_name">GEN_SAVEPOINT_NAME Function</a></li>
+<li><a href="#string_to_table">STRING_TO_TABLE Function</a></li>
+<li><a href="#clob_to_table">CLOB_TO_TABLE Function</a></li>
+<li><a href="#time_diff">TIME_DIFF Function</a></li>
+<li><a href="#indent_lines">INDENT_LINES Function</a></li>
+<li><a href="#get_utplsql_objects_list">GET_UTPLSQL_OBJECTS_LIST Function</a></li>
+<li><a href="#append_to_list">APPEND_TO_LIST Procedure</a></li>
+<li><a href="#set_action">SET_ACTION Procedure</a></li>
+<li><a href="#set_client_info">SET_CLIENT_INFO Procedure</a></li>
+<li><a href="#to_version">TO_VERSION Function</a></li>
+<li><a href="#save_dbms_output_to_cache">SAVE_DBMS_OUTPUT_TO_CACHE Procedure</a></li>
+<li><a href="#read_cache_to_dbms_output">READ_CACHE_TO_DBMS_OUTPUT Procedure</a></li>
+<li><a href="#ut_owner">UT_OWNER Function</a></li>
+<li><a href="#scale_cardinality">SCALE_CARDINALITY Function</a></li>
+<li><a href="#to_xml_number_format">TO_XML_NUMBER_FORMAT Function</a></li>
+<li><a href="#get_xml_header">GET_XML_HEADER Function</a></li>
+<li><a href="#trim_list_elements">TRIM_LIST_ELEMENTS Function</a></li>
+<li><a href="#filter_list">FILTER_LIST Function</a></li>
+<li><a href="#replace_multiline_comments">REPLACE_MULTILINE_COMMENTS Function</a></li>
+</ul>
+<h2 id="types">Types<a name="types"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>t_event_name</td>
+<td><pre>subtype t_event_name           is varchar2(30);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>t_executable_type</td>
+<td><pre>subtype t_executable_type      is varchar2(30);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>t_test_result</td>
+<td><pre>subtype t_test_result   is binary_integer range 0 .. 3;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>t_rollback_type</td>
+<td><pre>subtype t_rollback_type is binary_integer range 0 .. 1;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>t_version</td>
+<td><pre>type t_version is record(<br />  major  natural,<br />  minor  natural,<br />  bugfix natural,<br />  build  natural<br />);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>t_clob_tab</td>
+<td><pre>type t_clob_tab is table of clob;</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="constants">Constants<a name="constants"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gc_version</td>
+<td><pre>gc_version                 constant varchar2(50) := 'v3.1.2.2053-develop';</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="surround_with-function">SURROUND_WITH Function<a name="surround_with"></a></h2>
+<p>
+<p>utPLSQL - Version 3<br />  Copyright 2016 - 2017 utPLSQL Project</p><p>  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;):<br />  you may not use this file except in compliance with the License.<br />  You may obtain a copy of the License at</p><pre><code>  http://www.apache.org/licenses/LICENSE-2.0</code></pre><p>  Unless required by applicable law or agreed to in writing, software<br />  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,<br />  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br />  See the License for the specific language governing permissions and<br />  limitations under the License.</p>
+</p>
+
+<h3 id="syntax">Syntax</h3>
+<pre><code class="plsql">function surround_with(a_value varchar2, a_quote_char varchar2) return varchar2
+</code></pre>
+
+<h2 id="validate_rollback_type-procedure">VALIDATE_ROLLBACK_TYPE Procedure<a name="validate_rollback_type"></a></h2>
+<p>
+<p>Procedure: validate_rollback_type</p><p>   Validates passed value against supported rollback types</p>
+</p>
+
+<h3 id="syntax_1">Syntax</h3>
+<pre><code class="plsql">procedure validate_rollback_type(a_rollback_type number)
+</code></pre>
+
+<h2 id="test_result_to_char-function">TEST_RESULT_TO_CHAR Function<a name="test_result_to_char"></a></h2>
+<p>
+<p>Converts test results into strings</p>
+</p>
+
+<h3 id="syntax_2">Syntax</h3>
+<pre><code class="plsql">function test_result_to_char(a_test_result integer) return varchar2
+</code></pre>
+
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a_test_result</code></td>
+<td>numeric representation of test result</td>
+</tr>
+<tr>
+<td><em>return</em></td>
+<td>a string representation of a test_result.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gen_savepoint_name-function">GEN_SAVEPOINT_NAME Function<a name="gen_savepoint_name"></a></h2>
+<p>
+<p>Generates a unique name for a savepoint<br />Uses sys_guid, as timestamp gives only miliseconds on Windows and is not unique<br />Issue: #506 for details on the implementation approach</p>
+</p>
+
+<h3 id="syntax_3">Syntax</h3>
+<pre><code class="plsql">function gen_savepoint_name return varchar2
+</code></pre>
+
+<h2 id="string_to_table-function">STRING_TO_TABLE Function<a name="string_to_table"></a></h2>
+<p>
+<p>Splits a given string into table of string by delimiter.<br />The delimiter gets removed.<br />If null passed as any of the parameters, empty table is returned.<br />If no occurence of a_delimiter found in a_text then text is returned as a single row of the table.<br />If no text between delimiters found then an empty row is returned, example:<br />  string_to_table( &#39;a,,b&#39;, &#39;,&#39; ) gives table ut_varchar2_list( &#39;a&#39;, null, &#39;b&#39; );</p>
+</p>
+
+<h3 id="syntax_4">Syntax</h3>
+<pre><code class="plsql">function string_to_table(a_string varchar2, a_delimiter varchar2:= chr(10), a_skip_leading_delimiter varchar2 := 'N') return ut_varchar2_list
+</code></pre>
+
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a_string</code></td>
+<td>the text to be split.</td>
+</tr>
+<tr>
+<td><code>a_delimiter</code></td>
+<td>the delimiter character or string</td>
+</tr>
+<tr>
+<td><code>a_skip_leading_delimiter</code></td>
+<td>determines if the leading delimiter should be ignored, used by clob_to_table</td>
+</tr>
+<tr>
+<td><em>return</em></td>
+<td>table of varchar2 values</td>
+</tr>
+</tbody>
+</table>
+<h2 id="clob_to_table-function">CLOB_TO_TABLE Function<a name="clob_to_table"></a></h2>
+<p>
+<p>Splits a given string into table of string by delimiter.<br />Default value of a_max_amount is 8191 because of code can contains multibyte character.<br />The delimiter gets removed.<br />If null passed as any of the parameters, empty table is returned.<br />If split text is longer than a_max_amount it gets split into pieces of a_max_amount.<br />If no text between delimiters found then an empty row is returned, example:<br />  string_to_table( &#39;a,,b&#39;, &#39;,&#39; ) gives table ut_varchar2_list( &#39;a&#39;, null, &#39;b&#39; );</p>
+</p>
+
+<h3 id="syntax_5">Syntax</h3>
+<pre><code class="plsql">function clob_to_table(a_clob clob, a_max_amount integer := 8191, a_delimiter varchar2:= chr(10)) return ut_varchar2_list
+</code></pre>
+
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a_clob</code></td>
+<td>the text to be split.</td>
+</tr>
+<tr>
+<td><code>a_delimiter</code></td>
+<td>the delimiter character or string (default chr(10) )</td>
+</tr>
+<tr>
+<td><code>a_max_amount</code></td>
+<td>the maximum length of returned string (default 8191)</td>
+</tr>
+<tr>
+<td><em>return</em></td>
+<td>table of varchar2 values</td>
+</tr>
+</tbody>
+</table>
+<h2 id="time_diff-function">TIME_DIFF Function<a name="time_diff"></a></h2>
+<p>
+<p>Returns time difference in seconds (with miliseconds) between given timestamps</p>
+</p>
+
+<h3 id="syntax_6">Syntax</h3>
+<pre><code class="plsql">function time_diff(a_start_time timestamp with time zone, a_end_time timestamp with time zone) return number
+</code></pre>
+
+<h2 id="indent_lines-function">INDENT_LINES Function<a name="indent_lines"></a></h2>
+<p>
+<p>Returns a text indented with spaces except the first line.</p>
+</p>
+
+<h3 id="syntax_7">Syntax</h3>
+<pre><code class="plsql">function indent_lines(a_text varchar2, a_indent_size integer := 4, a_include_first_line boolean := false) return varchar2
+</code></pre>
+
+<h2 id="get_utplsql_objects_list-function">GET_UTPLSQL_OBJECTS_LIST Function<a name="get_utplsql_objects_list"></a></h2>
+<p>
+<p>Returns a list of object that are part of utPLSQL framework</p>
+</p>
+
+<h3 id="syntax_8">Syntax</h3>
+<pre><code class="plsql">function get_utplsql_objects_list return ut_object_names
+</code></pre>
+
+<h2 id="append_to_list-procedure">APPEND_TO_LIST Procedure<a name="append_to_list"></a></h2>
+<p>
+<p>Append a item to the end of ut_varchar2_list</p>
+</p>
+
+<h3 id="syntax_9">Syntax</h3>
+<pre><code class="plsql">procedure append_to_list(a_list in out nocopy ut_varchar2_list, a_item varchar2)
+</code></pre>
+
+<h2 id="set_action-procedure">SET_ACTION Procedure<a name="set_action"></a></h2>
+<p>
+<p>Set session&#39;s action and module using dbms_application_info</p>
+</p>
+
+<h3 id="syntax_10">Syntax</h3>
+<pre><code class="plsql">procedure set_action(a_text in varchar2)
+</code></pre>
+
+<h2 id="set_client_info-procedure">SET_CLIENT_INFO Procedure<a name="set_client_info"></a></h2>
+<p>
+<p>Set session&#39;s client info using dbms_application_info</p>
+</p>
+
+<h3 id="syntax_11">Syntax</h3>
+<pre><code class="plsql">procedure set_client_info(a_text in varchar2)
+</code></pre>
+
+<h2 id="to_version-function">TO_VERSION Function<a name="to_version"></a></h2>
+<p>
+<p>Converts version string into version record</p>
+</p>
+
+<h3 id="syntax_12">Syntax</h3>
+<pre><code class="plsql">function to_version(a_version_no varchar2) return t_version
+</code></pre>
+
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>a_version_no</code></td>
+<td>string representation of version in format vX.X.X.X where X is a positive integer</td>
+</tr>
+<tr>
+<td><em>return</em></td>
+<td>t_version    record with up to four positive numbers containing version</td>
+</tr>
+</tbody>
+</table>
+<h3 id="thrown-exceptions">Thrown exceptions</h3>
+<p><em>throws</em> 20214 if passed version string is not matching version pattern</p>
+<h2 id="save_dbms_output_to_cache-procedure">SAVE_DBMS_OUTPUT_TO_CACHE Procedure<a name="save_dbms_output_to_cache"></a></h2>
+<p>
+<p>Saves data from dbms_output buffer into a global temporary table (cache)<br />  used to store dbms_output buffer captured before the run</p>
+</p>
+
+<h3 id="syntax_13">Syntax</h3>
+<pre><code class="plsql">procedure save_dbms_output_to_cache
+</code></pre>
+
+<h2 id="read_cache_to_dbms_output-procedure">READ_CACHE_TO_DBMS_OUTPUT Procedure<a name="read_cache_to_dbms_output"></a></h2>
+<p>
+<p>Reads data from global temporary table (cache) abd puts it back into dbms_output<br />  used to recover dbms_output buffer data after a run is complete</p>
+</p>
+
+<h3 id="syntax_14">Syntax</h3>
+<pre><code class="plsql">procedure read_cache_to_dbms_output
+</code></pre>
+
+<h2 id="ut_owner-function">UT_OWNER Function<a name="ut_owner"></a></h2>
+<p>
+<p>Function is used to reference to utPLSQL owned objects in dynamic sql statements executed from packages with invoker rights</p>
+</p>
+
+<h3 id="syntax_15">Syntax</h3>
+<pre><code class="plsql">function ut_owner return varchar2
+</code></pre>
+
+<h3 id="parameters_4">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>return</em></td>
+<td>the name of the utPSQL schema owner</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scale_cardinality-function">SCALE_CARDINALITY Function<a name="scale_cardinality"></a></h2>
+<p>
+<p>Used in dynamic sql select statements to maintain balance between<br />  number of hard-parses and optimiser accurancy for cardinality of collections</p>
+</p>
+
+<h3 id="syntax_16">Syntax</h3>
+<pre><code class="plsql">function scale_cardinality(a_cardinality natural) return natural
+</code></pre>
+
+<h3 id="parameters_5">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>return</em></td>
+<td>3, for inputs of: 1-9; 33 for input of 10 - 99; 333 for (100 - 999)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="to_xml_number_format-function">TO_XML_NUMBER_FORMAT Function<a name="to_xml_number_format"></a></h2>
+<p>
+<p>Returns number as string. The value is represented as decimal according to XML standard:<br /><a href="https://www.w3.org/TR/xmlschema-2/#decimal">https://www.w3.org/TR/xmlschema-2/#decimal</a></p>
+</p>
+
+<h3 id="syntax_17">Syntax</h3>
+<pre><code class="plsql">function to_xml_number_format(a_value number) return varchar2
+</code></pre>
+
+<h2 id="get_xml_header-function">GET_XML_HEADER Function<a name="get_xml_header"></a></h2>
+<p>
+<p>Returns xml header. If a_encoding is not null, header will include encoding attribute with provided value</p>
+</p>
+
+<h3 id="syntax_18">Syntax</h3>
+<pre><code class="plsql">function get_xml_header(a_encoding varchar2) return varchar2
+</code></pre>
+
+<h2 id="trim_list_elements-function">TRIM_LIST_ELEMENTS Function<a name="trim_list_elements"></a></h2>
+<p>
+<p>It takes a collection of type ut_varchar2_list and it trims the characters passed as arguments for every element</p>
+</p>
+
+<h3 id="syntax_19">Syntax</h3>
+<pre><code class="plsql">function trim_list_elements(a_list IN ut_varchar2_list, a_regexp_to_trim in varchar2 default '[:space:]') return ut_varchar2_list
+</code></pre>
+
+<h2 id="filter_list-function">FILTER_LIST Function<a name="filter_list"></a></h2>
+<p>
+<p>It takes a collection of type ut_varchar2_list and it only returns the elements which meets the regular expression</p>
+</p>
+
+<h3 id="syntax_20">Syntax</h3>
+<pre><code class="plsql">function filter_list(a_list IN ut_varchar2_list, a_regexp_filter in varchar2) return ut_varchar2_list
+</code></pre>
+
+<h2 id="replace_multiline_comments-function">REPLACE_MULTILINE_COMMENTS Function<a name="replace_multiline_comments"></a></h2>
+<p>
+<p>Replaces multi-line comments in given source-code with empty lines</p>
+</p>
+
+<h3 id="syntax_21">Syntax</h3>
+<pre><code class="plsql">function replace_multiline_comments(a_source clob) return clob
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../ut_teamcity_reporter_helper/" class="btn btn-neutral" title="UT_TEAMCITY_REPORTER_HELPER"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ut_teamcity_reporter_helper/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

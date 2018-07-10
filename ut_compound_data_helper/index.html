@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>UT_COMPOUND_DATA_HELPER - utPLSQL Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "UT_COMPOUND_DATA_HELPER";
+    var mkdocs_page_input_path = "ut_compound_data_helper.md";
+    var mkdocs_page_url = "/ut_compound_data_helper/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> utPLSQL Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">UTPLSQLDOCS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut/">UT</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_cache_manager/">UT_ANNOTATION_CACHE_MANAGER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_manager/">UT_ANNOTATION_MANAGER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_annotation_parser/">UT_ANNOTATION_PARSER</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_ansiconsole_helper/">UT_ANSICONSOLE_HELPER</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">UT_COMPOUND_DATA_HELPER</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#ut_compound_data_helper">UT_COMPOUND_DATA_HELPER</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#variables">Variables</a></li>
+        
+            <li><a class="toctree-l3" href="#constants">Constants</a></li>
+        
+            <li><a class="toctree-l3" href="#exceptions">Exceptions</a></li>
+        
+            <li><a class="toctree-l3" href="#get_columns_row_filter-function">GET_COLUMNS_ROW_FILTER Function</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage/">Ut coverage</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_block/">Ut coverage block</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper/">Ut coverage helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_block/">Ut coverage helper block</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_helper_profiler/">Ut coverage helper profiler</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_profiler/">Ut coverage profiler</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_coverage_report_html_helper/">Ut coverage report html helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_curr_usr_compound_helper/">Ut curr usr compound helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_event_manager/">Ut event manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_expectation_processor/">Ut expectation processor</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_file_mapper/">Ut file mapper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_metadata/">Ut metadata</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_runner/">Ut runner</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_builder/">Ut suite builder</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_suite_manager/">Ut suite manager</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_teamcity_reporter_helper/">Ut teamcity reporter helper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ut_utils/">Ut utils</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">utPLSQL Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>UT_COMPOUND_DATA_HELPER</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ut_compound_data_helper">UT_COMPOUND_DATA_HELPER</h1>
+<ul>
+<li>
+<p><a href="#constants">Constants</a></p>
+</li>
+<li>
+<p><a href="#variables">Variables</a></p>
+</li>
+<li>
+<p><a href="#exceptions">Exceptions</a></p>
+</li>
+<li>
+<p><a href="#get_columns_row_filter">GET_COLUMNS_ROW_FILTER Function</a></p>
+</li>
+</ul>
+<h2 id="variables">Variables<a name="variables"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>g_user_defined_type</td>
+<td><pre>g_user_defined_type pls_integer := dbms_sql.user_defined_type;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_res</td>
+<td><pre>  l_res xmltype;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_data</td>
+<td><pre>  l_data ut_data_value := a_column_details.value;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_key</td>
+<td><pre>  l_key varchar2(4000) := ut_utils.xmlgen_escaped_string(a_column_details.KEY);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>begin</td>
+<td><pre>begin<br />  l_result := '&lt;'</td>
+<td></td>
+</tr>
+<tr>
+<td>else</td>
+<td><pre>  else<br />    l_result := l_result</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><pre>  <br />  l_result := l_result</td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>  <br />  return xmltype(l_result);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_source_column</td>
+<td><pre>  l_source_column varchar2(500) := a_table_alias</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>  return l_filter;</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="constants">Constants<a name="constants"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gc_compare_join_by</td>
+<td><pre>gc_compare_join_by   constant varchar2(10):='join_by';</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>gc_compare_unordered</td>
+<td><pre>gc_compare_unordered constant varchar2(10):='unordered';</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>gc_compare_normal</td>
+<td><pre>gc_compare_normal    constant varchar2(10):='normal';</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exceptions">Exceptions<a name="exceptions"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>g_user_defined_type</td>
+<td><pre>g_user_defined_type pls_integer := dbms_sql.user_defined_type;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_res</td>
+<td><pre>  l_res xmltype;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_data</td>
+<td><pre>  l_data ut_data_value := a_column_details.value;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_key</td>
+<td><pre>  l_key varchar2(4000) := ut_utils.xmlgen_escaped_string(a_column_details.KEY);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>begin</td>
+<td><pre>begin<br />  l_result := '&lt;'</td>
+<td></td>
+</tr>
+<tr>
+<td>else</td>
+<td><pre>  else<br />    l_result := l_result</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><pre>  <br />  l_result := l_result</td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>  <br />  return xmltype(l_result);</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>l_source_column</td>
+<td><pre>  l_source_column varchar2(500) := a_table_alias</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td><pre>  end if;</pre></td>
+<td></td>
+</tr>
+<tr>
+<td>return</td>
+<td><pre>  return l_filter;</pre></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="get_columns_row_filter-function">GET_COLUMNS_ROW_FILTER Function<a name="get_columns_row_filter"></a></h2>
+<p>
+<p>Current get column filter shaving off ROW tag during extract, this not working well with include and XMLTABLE option<br />so when there is extract we artificially inject removed tag</p>
+</p>
+
+<h3 id="syntax">Syntax</h3>
+<pre><code class="plsql">function get_columns_row_filter(
+  a_exclude_xpath varchar2, a_include_xpath varchar2,
+  a_table_alias varchar2 := 'ucd', a_column_alias varchar2 := 'item_data'
+) return varchar2
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ut_coverage/" class="btn btn-neutral float-right" title="Ut coverage">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ut_ansiconsole_helper/" class="btn btn-neutral" title="UT_ANSICONSOLE_HELPER"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ut_ansiconsole_helper/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../ut_coverage/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
